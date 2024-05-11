@@ -1,20 +1,20 @@
 # Player AudioPlayer React
 
-Player AudioPlayer React es un componente de React diseñado para reproducir audio y visualizar su espectro. Proporciona controles de reproducción, visualización del espectro de audio y funcionalidades adicionales para mejorar la experiencia de reproducción de audio en tus aplicaciones React.
+Player AudioPlayer React is a React component designed to play audio and visualize its spectrum. It provides playback controls, audio spectrum display and additional functionality to enhance the audio playback experience in your React applications.
 
-## Instalación
+## Installation
 
-Para instalar Player AudioPlayer React, utiliza npm:
+InstallationTo install Player AudioPlayer React, use npm:
 
 `npm install player-audioplayer-react`
 
-O con yarn:
+Or with yarn:
 
 `yarn add player-audioplayer-react`
 
-## Uso
+## Usage
 
-Para utilizar Player AudioPlayer React en tu proyecto, importa el componente y pásale las propiedades necesarias, como el archivo de audio a reproducir. Aquí tienes un ejemplo básico de cómo usarlo:
+To use Player AudioPlayer React in your project, import the component and set the necessary properties, such as the audio file to play. Here is a basic example of how to use it:
 
 ```js
 import React from 'react';
@@ -25,7 +25,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Reproductor de Audio</h1>
+      <h1>Audio Player</h1>
       <AudioPlayer audio={audioUrl} />
     </div>
   );
@@ -36,18 +36,18 @@ export default App;
 
 ## Props
 
-El componente `AudioPlayer` acepta las siguientes propiedades:
+The `AudioPlayer` component accepts the following properties:
 
-- `audio`: (string, required) URL del archivo de audio a reproducir.
-- `playing`: (string) Ruta del archivo de audio que se está reproduciendo.
-- `setPlaying`: ((value: string) => void) Función para establecer la ruta del archivo de audio en reproducción.
-- `borderPlay`: (boolean) Indica si se debe mostrar un borde al botón de reproducción.
-- `showSpectro`: (boolean) Indica si se debe mostrar el espectro de audio mientras se reproduce.
-- `showCounter`: (boolean) Indica si se debe mostrar el contador de tiempo de reproducción.
-- `handleEndOfAudio`: (() => void) Función para manejar el final de la reproducción del audio.
-- `handlePlay`: ((value: boolean) => void) Función para manejar la reproducción del audio.
+- `audio`: (string, required) URL of the audio file to play.
+- `playing`: (string) Path of the audio file being played.
+- `setPlaying`: ((value: string) => void) Function to set the path of the audio file being played.
+- `borderPlay`: (boolean) Indicates if a border should be shown at the play button.
+- `showSpectrum`: (boolean) Indicates if the audio spectrum should be shown while playing.
+- `showCounter`: (boolean) Indicates whether to display the playback time counter.
+- `handleEndOfAudio`: (() => void) Function to handle the end of audio playback.
+- `handlePlay`: ((value: boolean) => void) Function to handle audio playback.
 
-## Observaciones
+## Observations
 
-El reproductor de audio solo pintará el espectro para los audios que permitan acceder a datos como un objeto tipo blog a través de una petición HTTP. Asegurate que tu audio no tenga bloqueo de CORS que no permita hacer la peticion.
+The audio player will only paint the spectrum for audios that allow access to data as a blog object through an HTTP request. Make sure that your audio does not have CORS blocking that does not allow the request to be made.
 
