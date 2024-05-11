@@ -11,7 +11,7 @@
     }
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "build": "tsc && webpack --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
