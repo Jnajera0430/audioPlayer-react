@@ -1,0 +1,5 @@
+node_modules
+dist
+
+audioplayer-react-1.0.0.tgz
+webpack.config.js
