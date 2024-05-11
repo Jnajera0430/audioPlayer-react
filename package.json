@@ -2,7 +2,14 @@
   "name": "player-audioplayer-react",
   "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.js"
+    }
+  },
   "scripts": {
     "build": "webpack --config webpack.config.js"
   },
